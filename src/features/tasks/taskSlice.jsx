@@ -35,7 +35,6 @@ const getTasksAsync = createAsyncThunk('tasks/getTasksAsync', async () => {
             }
         });
         const data = await response.json();
-        console.log("Notas: ", data)
         return data;
     } catch (error) {
         console.error('Error al agregar la tarea:', error);
